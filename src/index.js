@@ -49,7 +49,7 @@ signinForm.addEventListener("submit", (e) => {
     .then((cred) => {
       console.log(cred.user);
       alert("login");
-      window.location.href = "dashboard.html";
+      window.location.href = "dist/dashboard.html";
     })
     .catch((err) => {
       console.log(err.message);
@@ -64,7 +64,7 @@ logoutButton.addEventListener("click", () => {
     .then(() => {
       console.log("logout");
       alert("logout");
-      window.location.href = "index.html";
+      window.location.href = "../index.html";
     })
     .catch((err) => {
       console.log(err.message);
